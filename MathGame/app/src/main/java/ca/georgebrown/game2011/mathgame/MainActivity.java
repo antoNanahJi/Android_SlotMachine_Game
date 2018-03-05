@@ -81,9 +81,69 @@ public class MainActivity extends AppCompatActivity {
             public void onClick (View v){
 
                 if(playerBet<playerMoney)
-                playerBet+=5;
+                playerBet+=1;
                 else
                   Toast.makeText(getApplicationContext(),"You don't have enough money to place that bet.",Toast.LENGTH_LONG).show();
+                playerBetText.setText("Player Bet: "+String.valueOf(playerBet));
+            }
+        });
+
+        Button bet2 = (Button) findViewById(R.id.Bet5);
+        bet2.setOnClickListener(new View.OnClickListener() {
+            public void onClick (View v){
+
+                if(playerBet<playerMoney)
+                    playerBet+=5;
+                else
+                    Toast.makeText(getApplicationContext(),"You don't have enough money to place that bet.",Toast.LENGTH_LONG).show();
+                playerBetText.setText("Player Bet: "+String.valueOf(playerBet));
+            }
+        });
+
+        Button bet3 = (Button) findViewById(R.id.Bet10);
+        bet3.setOnClickListener(new View.OnClickListener() {
+            public void onClick (View v){
+
+                if(playerBet<playerMoney)
+                    playerBet+=10;
+                else
+                    Toast.makeText(getApplicationContext(),"You don't have enough money to place that bet.",Toast.LENGTH_LONG).show();
+                playerBetText.setText("Player Bet: "+String.valueOf(playerBet));
+            }
+        });
+
+        Button bet4 = (Button) findViewById(R.id.Bet20);
+        bet4.setOnClickListener(new View.OnClickListener() {
+            public void onClick (View v){
+
+                if(playerBet<playerMoney)
+                    playerBet+=20;
+                else
+                    Toast.makeText(getApplicationContext(),"You don't have enough money to place that bet.",Toast.LENGTH_LONG).show();
+                playerBetText.setText("Player Bet: "+String.valueOf(playerBet));
+            }
+        });
+
+        Button bet5 = (Button) findViewById(R.id.Bet50);
+        bet5.setOnClickListener(new View.OnClickListener() {
+            public void onClick (View v){
+
+                if(playerBet<playerMoney)
+                    playerBet+=50;
+                else
+                    Toast.makeText(getApplicationContext(),"You don't have enough money to place that bet.",Toast.LENGTH_LONG).show();
+                playerBetText.setText("Player Bet: "+String.valueOf(playerBet));
+            }
+        });
+
+        Button bet6 = (Button) findViewById(R.id.Bet100);
+        bet6.setOnClickListener(new View.OnClickListener() {
+            public void onClick (View v){
+
+                if(playerBet<playerMoney)
+                    playerBet+=100;
+                else
+                    Toast.makeText(getApplicationContext(),"You don't have enough money to place that bet.",Toast.LENGTH_LONG).show();
                 playerBetText.setText("Player Bet: "+String.valueOf(playerBet));
             }
         });
