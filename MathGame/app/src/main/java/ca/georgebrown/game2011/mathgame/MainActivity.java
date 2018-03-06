@@ -232,6 +232,8 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "You Won the $" + jackpot + " Jackpot!!", Toast.LENGTH_LONG).show();
             jackpotText.setText("Jackpot: "+String.valueOf(jackpot)); //Displays the jackpot win to the user
             playerMoney += jackpot;                                   //Adds the jackpot amount to the players wallet
+            MediaPlayer jackpotSound = MediaPlayer.create(MainActivity.this, R.raw.jackpotsound);
+            jackpotSound.start();
             jackpot = 1000;
         }
     }
@@ -241,6 +243,8 @@ public class MainActivity extends AppCompatActivity {
         playerMoneyText.setText("Player Money: "+String.valueOf(playerMoney));
         //$("div#winOrLose>p").text("You Won: $" + winnings);
         Toast.makeText(this, "You Won: $" + winnings, Toast.LENGTH_LONG).show();
+        MediaPlayer winSound = MediaPlayer.create(MainActivity.this, R.raw.winsound);
+        winSound.start();
        resetFruitTally();
         checkJackPot();
     }
@@ -251,6 +255,8 @@ public class MainActivity extends AppCompatActivity {
         playerMoneyText.setText("Player Money: "+String.valueOf(playerMoney));
         //$("div#winOrLose>p").text("You Lost!");
         Toast.makeText(this, "You Lost!" , Toast.LENGTH_LONG).show();
+        MediaPlayer loseSound = MediaPlayer.create(MainActivity.this, R.raw.losesound);
+        loseSound.start();
        resetFruitTally();
     }
     boolean checkRange(int value, int lowerBounds, int upperBounds) {
