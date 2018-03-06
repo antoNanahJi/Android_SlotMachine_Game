@@ -77,9 +77,9 @@ public class MainActivity extends AppCompatActivity {
         bet1.setOnClickListener(new View.OnClickListener() {
             public void onClick (View v){
 
-                if(playerBet<playerMoney)
-                playerBet+=1;
-                else
+                if(playerBet<playerMoney) //Statement that checks if the intended bet amount is less then the wallet amount
+                playerBet+=1;             //Changes the amount being bet per spin to 1
+                else                      //Displays message that the player does not have the money needed to make that bet amount
                   Toast.makeText(getApplicationContext(),"You don't have enough money to place that bet.",Toast.LENGTH_LONG).show();
                 playerBetText.setText("Player Bet: "+String.valueOf(playerBet));
             }
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick (View v){
 
                 if(playerBet<playerMoney)
-                    playerBet+=5;
+                    playerBet+=5;        //Changes the amount being bet per spin to 5
                 else
                     Toast.makeText(getApplicationContext(),"You don't have enough money to place that bet.",Toast.LENGTH_LONG).show();
                 playerBetText.setText("Player Bet: "+String.valueOf(playerBet));
@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick (View v){
 
                 if(playerBet<playerMoney)
-                    playerBet+=10;
+                    playerBet+=10;      //Changes the amount being bet per spin to 10
                 else
                     Toast.makeText(getApplicationContext(),"You don't have enough money to place that bet.",Toast.LENGTH_LONG).show();
                 playerBetText.setText("Player Bet: "+String.valueOf(playerBet));
@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick (View v){
 
                 if(playerBet<playerMoney)
-                    playerBet+=20;
+                    playerBet+=20;      //Changes the amount being bet per spin to 20
                 else
                     Toast.makeText(getApplicationContext(),"You don't have enough money to place that bet.",Toast.LENGTH_LONG).show();
                 playerBetText.setText("Player Bet: "+String.valueOf(playerBet));
@@ -126,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick (View v){
 
                 if(playerBet<playerMoney)
-                    playerBet+=50;
+                    playerBet+=50;      //Changes the amount being bet per spin to 50
                 else
                     Toast.makeText(getApplicationContext(),"You don't have enough money to place that bet.",Toast.LENGTH_LONG).show();
                 playerBetText.setText("Player Bet: "+String.valueOf(playerBet));
@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick (View v){
 
                 if(playerBet<playerMoney)
-                    playerBet+=100;
+                    playerBet+=100;     //Changes the amount being bet per spin to 100
                 else
                     Toast.makeText(getApplicationContext(),"You don't have enough money to place that bet.",Toast.LENGTH_LONG).show();
                 playerBetText.setText("Player Bet: "+String.valueOf(playerBet));
@@ -204,7 +204,7 @@ public class MainActivity extends AppCompatActivity {
         blanks = 0;
     }
 
-    void resetAll() {
+    void resetAll() {       //Resets all elements back to being the desired starting amounts
         playerMoney = 1000;
         winnings = 0;
         jackpot = 5000;
@@ -228,10 +228,10 @@ public class MainActivity extends AppCompatActivity {
     /* compare two random values */
         double jackPotTry = Math.floor(Math.random() * 51 + 1);
         double jackPotWin = Math.floor(Math.random() * 51 + 1);
-        if (jackPotTry == jackPotWin) {
+        if (jackPotTry == jackPotWin) {                                //Checks to see if the spin matches the jackpot win
             Toast.makeText(this, "You Won the $" + jackpot + " Jackpot!!", Toast.LENGTH_LONG).show();
-            jackpotText.setText("Jackpot: "+String.valueOf(jackpot));
-            playerMoney += jackpot;
+            jackpotText.setText("Jackpot: "+String.valueOf(jackpot)); //Displays the jackpot win to the user
+            playerMoney += jackpot;                                   //Adds the jackpot amount to the players wallet
             jackpot = 1000;
         }
     }
