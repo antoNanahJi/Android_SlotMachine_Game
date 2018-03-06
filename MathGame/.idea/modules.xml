@@ -4,7 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MathGame.iml" filepath="$PROJECT_DIR$/MathGame.iml" />
       <module fileurl="file://C:\Users\andre\Desktop\Android_SlotMashine_Game\MathGame\MathGame.iml" filepath="C:\Users\andre\Desktop\Android_SlotMashine_Game\MathGame\MathGame.iml" />
+      <module fileurl="file://C:\Users\anto2\Desktop\Android_SlotMashine_Game\MathGame\MathGame.iml" filepath="C:\Users\anto2\Desktop\Android_SlotMashine_Game\MathGame\MathGame.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\anto2\Desktop\Android_SlotMashine_Game\MathGame\app\app.iml" filepath="C:\Users\anto2\Desktop\Android_SlotMashine_Game\MathGame\app\app.iml" />
       <module fileurl="file://C:\Users\andre\Desktop\Android_SlotMashine_Game\MathGame\app\app.iml" filepath="C:\Users\andre\Desktop\Android_SlotMashine_Game\MathGame\app\app.iml" />
     </modules>
   </component>

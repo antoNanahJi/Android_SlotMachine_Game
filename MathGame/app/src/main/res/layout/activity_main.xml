@@ -101,7 +101,7 @@
         android:layout_marginTop="5dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/PlayerBet"
-        app:srcCompat="@drawable/xyz" />
+        app:srcCompat="@drawable/star" />
 
     <ImageView
         android:id="@+id/Image2"
@@ -113,7 +113,7 @@
         app:layout_constraintEnd_toStartOf="@+id/Image3"
         app:layout_constraintStart_toEndOf="@+id/Image1"
         app:layout_constraintTop_toBottomOf="@+id/PlayerBet"
-        app:srcCompat="@drawable/xyz" />
+        app:srcCompat="@drawable/star" />
 
     <ImageView
         android:id="@+id/Image3"
@@ -122,7 +122,7 @@
         android:layout_marginEnd="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/PlayerMoney"
-        app:srcCompat="@drawable/xyz" />
+        app:srcCompat="@drawable/star" />
 
     <Button
         android:id="@+id/Spin"

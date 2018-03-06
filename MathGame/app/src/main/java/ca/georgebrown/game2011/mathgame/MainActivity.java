@@ -1,5 +1,6 @@
 package ca.georgebrown.game2011.mathgame;
 
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,11 +16,8 @@ public class MainActivity extends AppCompatActivity {
     int jackpot = 5000;
     int turn = 0;
     int playerBet = 0;
-    int playerBetAmount=10;
     int winNumber = 0;
     int lossNumber = 0;
-    int spinResult;
-    String fruits = "";
     int winRatio = 0;
     int grapes = 0;
     int bananas = 0;
@@ -55,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         iv1 = (ImageView)findViewById(R.id.Image1);
         iv2 = (ImageView)findViewById(R.id.Image2);
         iv3 = (ImageView)findViewById(R.id.Image3);
-        Toast.makeText(this, "onCreate completed", Toast.LENGTH_LONG).show();
+       // Toast.makeText(this, "onCreate completed", Toast.LENGTH_LONG).show();
         Button quit = (Button) findViewById(R.id.quit);
         ButtonListener quitListener = new ButtonListener();
         quit.setOnClickListener(quitListener);
@@ -63,8 +61,7 @@ public class MainActivity extends AppCompatActivity {
         Button spin = (Button) findViewById(R.id.Spin);
         spin.setOnClickListener(new View.OnClickListener() {
             public void onClick (View v){
-
-                Spin();
+             Spin();
 
             }
         });
@@ -154,37 +151,37 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onRestart() {
         super.onRestart();
-        Toast.makeText(this, "onRestart completed", Toast.LENGTH_LONG).show();
+       // Toast.makeText(this, "onRestart completed", Toast.LENGTH_LONG).show();
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        Toast.makeText(this, "onPause completed", Toast.LENGTH_LONG).show();
+      //  Toast.makeText(this, "onPause completed", Toast.LENGTH_LONG).show();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Toast.makeText(this, "onResume completed", Toast.LENGTH_LONG).show();
+       // Toast.makeText(this, "onResume completed", Toast.LENGTH_LONG).show();
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        Toast.makeText(this, "onStop completed", Toast.LENGTH_LONG).show();
+        //Toast.makeText(this, "onStop completed", Toast.LENGTH_LONG).show();
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Toast.makeText(this, "onDestroy completed", Toast.LENGTH_LONG).show();
+      //  Toast.makeText(this, "onDestroy completed", Toast.LENGTH_LONG).show();
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        Toast.makeText(this, "onStart completed", Toast.LENGTH_LONG).show();
+       // Toast.makeText(this, "onStart completed", Toast.LENGTH_LONG).show();
 
     }
 
@@ -221,6 +218,10 @@ public class MainActivity extends AppCompatActivity {
         jackpotText.setText("Jackpot: "+String.valueOf(jackpot));
         playerMoneyText.setText("Player Money: " +String.valueOf(playerMoney));
         playerBetText.setText("Player Bet: "+String.valueOf(playerBet));
+
+        iv1.setImageResource(R.drawable.star);
+        iv2.setImageResource(R.drawable.star);
+        iv3.setImageResource(R.drawable.star);
     }
 
     void checkJackPot() {
@@ -229,7 +230,7 @@ public class MainActivity extends AppCompatActivity {
         double jackPotWin = Math.floor(Math.random() * 51 + 1);
         if (jackPotTry == jackPotWin) {
             Toast.makeText(this, "You Won the $" + jackpot + " Jackpot!!", Toast.LENGTH_LONG).show();
-            //jackpotText.setText(jackpot);
+            jackpotText.setText("Jackpot: "+String.valueOf(jackpot));
             playerMoney += jackpot;
             jackpot = 1000;
         }
@@ -373,8 +374,6 @@ public class MainActivity extends AppCompatActivity {
 
     /* When the player clicks the spin button the game kicks off */
     void Spin() {
-        //playerBet=playerBetAmount;
-
         if (playerMoney == 0) {
             Toast.makeText(getApplicationContext(), "You ran out of Money! Do you want to play again?", Toast.LENGTH_LONG).show();
            // resetAll();
@@ -384,8 +383,9 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),"You don't have enough money to place that bet.",Toast.LENGTH_LONG).show();
         } else if (playerBet < 0){
             Toast.makeText(getApplicationContext(), "All bets must be a positive $ amount.", Toast.LENGTH_LONG).show();
-        } else if (playerBet <= playerMoney) {
-
+        } else if (playerBet <= playerMoney && playerBet != 0) {
+            MediaPlayer ring = MediaPlayer.create(MainActivity.this, R.raw.spinsound);
+            ring.start();
             Reels();
             determineWinnings();
             turn++;
