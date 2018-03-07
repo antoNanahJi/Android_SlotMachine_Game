@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                 if(playerBet<playerMoney) //Statement that checks if the intended bet amount is less then the wallet amount
                 playerBet+=1;             //Changes the amount being bet per spin to 1
                 else                      //Displays message that the player does not have the money needed to make that bet amount
-                  Toast.makeText(getApplicationContext(),"You don't have enough money to place that bet.",Toast.LENGTH_LONG).show();
+                  Toast.makeText(getApplicationContext(),"You don't have enough money to place that bet.",Toast.LENGTH_SHORT).show();
                 playerBetText.setText("Player Bet: "+String.valueOf(playerBet));
             }
         });
@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
                 if(playerBet<playerMoney)
                     playerBet+=5;        //Changes the amount being bet per spin to 5
                 else
-                    Toast.makeText(getApplicationContext(),"You don't have enough money to place that bet.",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),"You don't have enough money to place that bet.",Toast.LENGTH_SHORT).show();
                 playerBetText.setText("Player Bet: "+String.valueOf(playerBet));
             }
         });
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
                 if(playerBet<playerMoney)
                     playerBet+=20;      //Changes the amount being bet per spin to 20
                 else
-                    Toast.makeText(getApplicationContext(),"You don't have enough money to place that bet.",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),"You don't have enough money to place that bet.",Toast.LENGTH_SHORT).show();
                 playerBetText.setText("Player Bet: "+String.valueOf(playerBet));
             }
         });
@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
                 if(playerBet<playerMoney)
                     playerBet+=50;      //Changes the amount being bet per spin to 50
                 else
-                    Toast.makeText(getApplicationContext(),"You don't have enough money to place that bet.",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),"You don't have enough money to place that bet.",Toast.LENGTH_SHORT).show();
                 playerBetText.setText("Player Bet: "+String.valueOf(playerBet));
             }
         });
@@ -140,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
                 if(playerBet<playerMoney)
                     playerBet+=100;     //Changes the amount being bet per spin to 100
                 else
-                    Toast.makeText(getApplicationContext(),"You don't have enough money to place that bet.",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),"You don't have enough money to place that bet.",Toast.LENGTH_SHORT).show();
                 playerBetText.setText("Player Bet: "+String.valueOf(playerBet));
             }
         });
@@ -229,7 +229,7 @@ public class MainActivity extends AppCompatActivity {
         double jackPotTry = Math.floor(Math.random() * 51 + 1);
         double jackPotWin = Math.floor(Math.random() * 51 + 1);
         if (jackPotTry == jackPotWin) {                                //Checks to see if the spin matches the jackpot win
-            Toast.makeText(this, "You Won the $" + jackpot + " Jackpot!!", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "You Won the $" + jackpot + " Jackpot!!", Toast.LENGTH_SHORT).show();
             jackpotText.setText("Jackpot: "+String.valueOf(jackpot)); //Displays the jackpot win to the user
             playerMoney += jackpot;                                   //Adds the jackpot amount to the players wallet
             MediaPlayer jackpotSound = MediaPlayer.create(MainActivity.this, R.raw.jackpotsound);
@@ -242,7 +242,7 @@ public class MainActivity extends AppCompatActivity {
         playerMoney += winnings;
         playerMoneyText.setText("Player Money: "+String.valueOf(playerMoney));
         //$("div#winOrLose>p").text("You Won: $" + winnings);
-        Toast.makeText(this, "You Won: $" + winnings, Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "You Won: $" + winnings, Toast.LENGTH_SHORT).show();
         MediaPlayer winSound = MediaPlayer.create(MainActivity.this, R.raw.winsound);
         winSound.start();
        resetFruitTally();
@@ -254,7 +254,7 @@ public class MainActivity extends AppCompatActivity {
         playerMoney -= playerBet;
         playerMoneyText.setText("Player Money: "+String.valueOf(playerMoney));
         //$("div#winOrLose>p").text("You Lost!");
-        Toast.makeText(this, "You Lost!" , Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "You Lost!" , Toast.LENGTH_SHORT).show();
         MediaPlayer loseSound = MediaPlayer.create(MainActivity.this, R.raw.losesound);
         loseSound.start();
        resetFruitTally();
@@ -381,14 +381,14 @@ public class MainActivity extends AppCompatActivity {
     /* When the player clicks the spin button the game kicks off */
     void Spin() {
         if (playerMoney == 0) {
-            Toast.makeText(getApplicationContext(), "You ran out of Money! Do you want to play again?", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "You ran out of Money! Do you want to play again?", Toast.LENGTH_SHORT).show();
            // resetAll();
             //showPlayerStats();
             checkJackPot();
         } else if (playerBet > playerMoney) {
-            Toast.makeText(getApplicationContext(),"You don't have enough money to place that bet.",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),"You don't have enough money to place that bet.",Toast.LENGTH_SHORT).show();
         } else if (playerBet < 0){
-            Toast.makeText(getApplicationContext(), "All bets must be a positive $ amount.", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "All bets must be a positive $ amount.", Toast.LENGTH_SHORT).show();
         } else if (playerBet <= playerMoney && playerBet != 0) {
             MediaPlayer ring = MediaPlayer.create(MainActivity.this, R.raw.spinsound);
             ring.start();
@@ -397,7 +397,7 @@ public class MainActivity extends AppCompatActivity {
             turn++;
             //showPlayerStats();
         } else {
-            Toast.makeText(getApplicationContext(), "Please enter a valid bet amount", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Please enter a valid bet amount", Toast.LENGTH_SHORT).show();
         }
     }
 
