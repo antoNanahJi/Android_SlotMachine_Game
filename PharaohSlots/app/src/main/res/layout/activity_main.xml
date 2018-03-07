@@ -130,8 +130,9 @@
         android:layout_height="47dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:background="@android:color/holo_blue_dark"
+        android:background="@android:color/holo_red_dark"
         android:text="Spin"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -142,8 +143,9 @@
         android:layout_height="35dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorPrimaryDark"
         android:text="ReStart"
+        android:textColor="@android:color/white"
         android:textSize="10sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -154,8 +156,9 @@
         android:layout_height="35dp"
         android:layout_marginEnd="10dp"
         android:layout_marginTop="5dp"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorPrimaryDark"
         android:text="Quit"
+        android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
