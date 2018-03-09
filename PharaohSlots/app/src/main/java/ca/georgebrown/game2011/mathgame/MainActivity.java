@@ -1,5 +1,11 @@
 package ca.georgebrown.game2011.mathgame;
 
+//Pharaoh Slots
+//Andre Reano
+//Anto  Nanah Ji 101103788
+//Logan King
+//Created on March 1st
+
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -275,9 +281,9 @@ public class MainActivity extends AppCompatActivity {
 
             if (checkRange(outCome, 1, 27)) {// 41.5% probability
                 //betLine[spin] = "blank";
-                if(spin==0)iv1.setImageResource(R.drawable.xyz);
-                else if(spin==1)iv2.setImageResource(R.drawable.xyz);
-                else if(spin==2)iv3.setImageResource(R.drawable.xyz);
+                if(spin==0)iv1.setImageResource(R.drawable.blank);
+                else if(spin==1)iv2.setImageResource(R.drawable.blank);
+                else if(spin==2)iv3.setImageResource(R.drawable.blank);
                 blanks++;
             }
             else if (checkRange(outCome, 28, 37)) { // 15.4% probability
