@@ -4,10 +4,8 @@
     <modules>
       <module fileurl="file://C:\Users\andre\Desktop\Android_SlotMashine_Game\MathGame\MathGame.iml" filepath="C:\Users\andre\Desktop\Android_SlotMashine_Game\MathGame\MathGame.iml" />
       <module fileurl="file://$PROJECT_DIR$/PharaohSlots.iml" filepath="$PROJECT_DIR$/PharaohSlots.iml" />
-      <module fileurl="file://C:\Users\Logan\Documents\GitHub\Android_SlotMashine_Game\PharaohSlots\PharaohSlots.iml" filepath="C:\Users\Logan\Documents\GitHub\Android_SlotMashine_Game\PharaohSlots\PharaohSlots.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://C:\Users\andre\Desktop\Android_SlotMashine_Game\MathGame\app\app.iml" filepath="C:\Users\andre\Desktop\Android_SlotMashine_Game\MathGame\app\app.iml" />
-      <module fileurl="file://C:\Users\Logan\Documents\GitHub\Android_SlotMashine_Game\PharaohSlots\app\app.iml" filepath="C:\Users\Logan\Documents\GitHub\Android_SlotMashine_Game\PharaohSlots\app\app.iml" />
     </modules>
   </component>
 </project>
