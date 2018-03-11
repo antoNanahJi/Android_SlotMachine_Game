@@ -21,49 +21,14 @@
         app:srcCompat="@android:color/holo_orange_dark" />
 
     <ImageView
-        android:id="@+id/slot1"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="15dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PlayerBet"
-        app:srcCompat="@android:color/darker_gray" />
-
-    <ImageView
-        android:id="@+id/slot2"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toStartOf="@+id/slot3"
-        app:layout_constraintStart_toEndOf="@+id/slot1"
-        app:layout_constraintTop_toBottomOf="@+id/PlayerMoney"
-        app:srcCompat="@android:color/darker_gray" />
-
-    <ImageView
-        android:id="@+id/slot3"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginTop="10dp"
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PlayerMoney"
-        app:srcCompat="@android:color/darker_gray" />
-
-    <TextView
-        android:id="@+id/PlayerBet"
-        android:layout_width="155dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:text="$$$"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/PlayerMoney"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Jackpot" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/egyptbg" />
 
     <TextView
         android:id="@+id/Jackpot"
@@ -71,57 +36,77 @@
         android:layout_height="50dp"
         android:layout_marginEnd="100dp"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="68dp"
         android:text="Jackpot"
         android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/PlayerBet"
+        android:layout_width="155dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:text="$$$"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/PlayerMoney"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/Image1" />
 
     <TextView
         android:id="@+id/PlayerMoney"
         android:layout_width="155dp"
         android:layout_height="45dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="8dp"
         android:text="$$$"
+        android:textColor="@android:color/holo_orange_dark"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/PlayerBet"
-        app:layout_constraintTop_toBottomOf="@+id/Jackpot" />
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/Image3" />
 
     <ImageView
         android:id="@+id/Image1"
         android:layout_width="100dp"
         android:layout_height="140dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/Image2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PlayerBet"
+        app:layout_constraintTop_toBottomOf="@+id/Jackpot"
         app:srcCompat="@drawable/star" />
 
     <ImageView
         android:id="@+id/Image2"
         android:layout_width="100dp"
         android:layout_height="140dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/PlayerBet"
         app:layout_constraintEnd_toStartOf="@+id/Image3"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/Image1"
-        app:layout_constraintTop_toBottomOf="@+id/PlayerBet"
+        app:layout_constraintTop_toBottomOf="@+id/Jackpot"
         app:srcCompat="@drawable/star" />
 
     <ImageView
         android:id="@+id/Image3"
         android:layout_width="100dp"
         android:layout_height="140dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginTop="2dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PlayerMoney"
+        app:layout_constraintStart_toEndOf="@+id/Image2"
+        app:layout_constraintTop_toBottomOf="@+id/Jackpot"
         app:srcCompat="@drawable/star" />
 
     <Button
@@ -165,22 +150,21 @@
     <Button
         android:id="@+id/Bet1"
         android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="5dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="25dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@android:color/holo_orange_light"
         android:text="1$"
         app:layout_constraintBottom_toTopOf="@+id/Bet5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Image1" />
+        app:layout_constraintTop_toBottomOf="@+id/PlayerBet" />
 
     <Button
         android:id="@+id/Bet5"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginBottom="10dp"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="10dp"
         android:backgroundTint="@android:color/holo_orange_light"
         android:text="5$"
@@ -193,7 +177,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginBottom="10dp"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="10dp"
         android:backgroundTint="@android:color/holo_orange_light"
         android:text="10$"
@@ -206,20 +190,20 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginBottom="5dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@android:color/holo_orange_light"
         android:text="20$"
         app:layout_constraintBottom_toTopOf="@+id/Bet50"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Image3" />
+        app:layout_constraintTop_toBottomOf="@+id/PlayerMoney" />
 
     <Button
         android:id="@+id/Bet50"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginBottom="10dp"
-        android:layout_marginEnd="25dp"
+        android:layout_marginEnd="28dp"
         android:layout_marginTop="10dp"
         android:backgroundTint="@android:color/holo_orange_light"
         android:text="50$"
@@ -232,7 +216,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginBottom="10dp"
-        android:layout_marginEnd="25dp"
+        android:layout_marginEnd="28dp"
         android:layout_marginTop="10dp"
         android:backgroundTint="@android:color/holo_orange_light"
         android:text="100$"
@@ -243,18 +227,18 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="200dp"
+        android:layout_width="325dp"
+        android:layout_height="190dp"
         android:layout_marginBottom="48dp"
         android:layout_marginEnd="10dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="50dp"
         android:background="@android:color/holo_orange_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Jackpot"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintTop_toBottomOf="@+id/Image2"
+        app:layout_constraintVertical_bias="0.65999997"
         app:srcCompat="@drawable/bgslotm" />
 
 </android.support.constraint.ConstraintLayout>

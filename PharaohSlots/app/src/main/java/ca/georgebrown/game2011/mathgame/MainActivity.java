@@ -1,7 +1,7 @@
 package ca.georgebrown.game2011.mathgame;
 
 //Pharaoh Slots
-//Andre Reano
+//Andre Reano 101075780
 //Anto  Nanah Ji 101103788
 //Logan King
 //Created on March 1st
@@ -289,44 +289,44 @@ public class MainActivity extends AppCompatActivity {
             }
             else if (checkRange(outCome, 28, 37)) { // 15.4% probability
                 //betLine[spin] = "Grapes";
-                if(spin==0)iv1.setImageResource(R.drawable.grapes);
-                else if(spin==1)iv2.setImageResource(R.drawable.grapes);
-                else if(spin==2)iv3.setImageResource(R.drawable.grapes);
+                if(spin==0)iv1.setImageResource(R.drawable.key);
+                else if(spin==1)iv2.setImageResource(R.drawable.key);
+                else if(spin==2)iv3.setImageResource(R.drawable.key);
                 grapes++;
             }
             else if( checkRange(outCome, 38, 46)){ // 13.8% probability
                 //betLine[spin] = "Banana";
-                if(spin==0)iv1.setImageResource(R.drawable.banana);
-                else if(spin==1)iv2.setImageResource(R.drawable.banana);
-                else if(spin==2)iv3.setImageResource(R.drawable.banana);
+                if(spin==0)iv1.setImageResource(R.drawable.dog);
+                else if(spin==1)iv2.setImageResource(R.drawable.dog);
+                else if(spin==2)iv3.setImageResource(R.drawable.dog);
                 bananas++;
             }
             else if(checkRange(outCome, 47, 54)) { // 12.3% probability
                 //    betLine[spin] = "Orange";
-                if(spin==0)iv1.setImageResource(R.drawable.orange);
-                else if(spin==1)iv2.setImageResource(R.drawable.orange);
-                else if(spin==2)iv3.setImageResource(R.drawable.orange);
+                if(spin==0)iv1.setImageResource(R.drawable.desert);
+                else if(spin==1)iv2.setImageResource(R.drawable.desert);
+                else if(spin==2)iv3.setImageResource(R.drawable.desert);
                 oranges++;
             }
             else if (checkRange(outCome, 55, 59)) { //  7.7% probability
                // betLine[spin] = "Cherry";
-                if(spin==0)iv1.setImageResource(R.drawable.cherry);
-                else if(spin==1)iv2.setImageResource(R.drawable.cherry);
-                else if(spin==2)iv3.setImageResource(R.drawable.cherry);
+                if(spin==0)iv1.setImageResource(R.drawable.eye);
+                else if(spin==1)iv2.setImageResource(R.drawable.eye);
+                else if(spin==2)iv3.setImageResource(R.drawable.eye);
                 cherries++;
             }
             else if( checkRange(outCome, 60, 62)) { //  4.6% probability
                 // betLine[spin] = "Bar";
-                if(spin==0)iv1.setImageResource(R.drawable.bar);
-                else if(spin==1)iv2.setImageResource(R.drawable.bar);
-                else if(spin==2)iv3.setImageResource(R.drawable.bar);
+                if(spin==0)iv1.setImageResource(R.drawable.queen);
+                else if(spin==1)iv2.setImageResource(R.drawable.queen);
+                else if(spin==2)iv3.setImageResource(R.drawable.queen);
                 bars++;
             }
             else if( checkRange(outCome, 63, 64)) { //  3.1% probability
                // betLine[spin] = "Bell";
-                if(spin==0)iv1.setImageResource(R.drawable.bell);
-                else if(spin==1)iv2.setImageResource(R.drawable.bell);
-                else if(spin==2)iv3.setImageResource(R.drawable.bell);
+                if(spin==0)iv1.setImageResource(R.drawable.pharaoh);
+                else if(spin==1)iv2.setImageResource(R.drawable.pharaoh);
+                else if(spin==2)iv3.setImageResource(R.drawable.pharaoh);
                 bells++;
             }
             else if(checkRange(outCome, 65, 65)){ //  1.5% probability

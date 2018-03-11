@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://C:\Users\andre\Desktop\Android_SlotMashine_Game\MathGame\MathGame.iml" filepath="C:\Users\andre\Desktop\Android_SlotMashine_Game\MathGame\MathGame.iml" />
       <module fileurl="file://$PROJECT_DIR$/PharaohSlots.iml" filepath="$PROJECT_DIR$/PharaohSlots.iml" />
-<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-=======
-      <module fileurl="file://C:\Users\Logan\Documents\GitHub\Android_SlotMashine_Game\PharaohSlots\PharaohSlots.iml" filepath="C:\Users\Logan\Documents\GitHub\Android_SlotMashine_Game\PharaohSlots\PharaohSlots.iml" />
-      <module fileurl="file://C:\Users\anto2\Downloads\Android_SlotMachine_Game\PharaohSlots\PharaohSlots.iml" filepath="C:\Users\anto2\Downloads\Android_SlotMachine_Game\PharaohSlots\PharaohSlots.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\Logan\Documents\GitHub\Android_SlotMashine_Game\PharaohSlots\app\app.iml" filepath="C:\Users\Logan\Documents\GitHub\Android_SlotMashine_Game\PharaohSlots\app\app.iml" />
-      <module fileurl="file://C:\Users\anto2\Downloads\Android_SlotMachine_Game\PharaohSlots\app\app.iml" filepath="C:\Users\anto2\Downloads\Android_SlotMachine_Game\PharaohSlots\app\app.iml" />
->>>>>>> 6b70bfd484685c212df1cb23a63b822abfd6fe8f
-      <module fileurl="file://C:\Users\andre\Desktop\Android_SlotMashine_Game\MathGame\app\app.iml" filepath="C:\Users\andre\Desktop\Android_SlotMashine_Game\MathGame\app\app.iml" />
     </modules>
   </component>
 </project>
