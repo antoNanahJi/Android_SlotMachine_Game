@@ -22,8 +22,8 @@
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="352dp"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
@@ -38,7 +38,7 @@
         android:layout_height="50dp"
         android:layout_marginEnd="100dp"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="85dp"
         android:text="Jackpot"
         android:textAlignment="center"
         android:textColor="@android:color/holo_red_dark"
