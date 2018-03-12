@@ -3,8 +3,13 @@ package ca.georgebrown.game2011.mathgame;
 //Pharaoh Slots
 //Andre Reano 101075780
 //Anto  Nanah Ji 101103788
-//Logan King
+//Logan King   101100360
 //Created on March 1st
+//This is a slot machine code written is Java with VENOM STUDIOS
+//First Playable and Layout Mar 5, 2018
+//Alpha Mar 8, 2018
+//Beta Mar 11, 2018
+//Final release Mar 12, 2018
 
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;

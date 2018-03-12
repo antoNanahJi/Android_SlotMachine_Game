@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PharaohSlots.iml" filepath="$PROJECT_DIR$/PharaohSlots.iml" />
+      <module fileurl="file://C:\Users\anto2\Desktop\folderPL\Android_SlotMachine_Game\PharaohSlots\PharaohSlots.iml" filepath="C:\Users\anto2\Desktop\folderPL\Android_SlotMachine_Game\PharaohSlots\PharaohSlots.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\anto2\Desktop\folderPL\Android_SlotMachine_Game\PharaohSlots\app\app.iml" filepath="C:\Users\anto2\Desktop\folderPL\Android_SlotMachine_Game\PharaohSlots\app\app.iml" />
     </modules>
   </component>
 </project>
